@@ -1,0 +1,33 @@
+{
+  "id": "poke-ui",
+  "name": "Poke (互动间)",
+  "version": "1.0.0",
+  "plugin": "",
+  "enabled": true,
+  "patches": [
+    {
+      "target": "nav",
+      "op": "insert",
+      "id": "poke",
+      "item": {
+        "id": "poke",
+        "to": "/poke",
+        "label": "互动间",
+        "icon": "heart",
+        "order": 40
+      }
+    },
+    {
+      "target": "router",
+      "op": "insert",
+      "id": "poke",
+      "item": {
+        "id": "poke",
+        "path": "/poke",
+        "name": "poke",
+        "module": "/api/plugins/poke/ui/index.js?v=1",
+        "title": "互动间"
+      }
+    }
+  ]
+}
