@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "name": "@momomiao-nomo/0kay-poke",
+  "version": "1.0.0",
+  "description": "戳一戳 — 在独立的「互动间」页面里戳你的 Live2D 角色、攒好感度。0KAY WebUI 第三方插件。",
+  "repository": "https://github.com/momomiao-nomo/0kay-poke",
+  "patches": ["core/data/ui/poke.patch"],
+  "ui": {
+    "dir": "plugin-web/poke",
+    "plugin": "poke",
+    "dist": "dist",
+    "build": [["node", "build.mjs"]]
+  }
+}
